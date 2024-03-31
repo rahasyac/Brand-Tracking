@@ -4,19 +4,37 @@ Brand tracking is essential to a business because the information obtained from 
 We are collecting the data from twitter on a weekly basis for the month of February. February can be a valuable month for businesses to advertise deals and discounts, as well as release new products on account of the major events such as Super Bowl (12th Feb), Valentine’s Day (14th Feb.) and Mardi Gras (21st Feb.). This data is being pulled using the python package ‘tweepy’ and a standard twitter API. The tweets will be analyzed for 2 similar companies who belong to 3 distinct business categories, namely:
 
 Starbucks/Dunkin's [Food industry]
+
 Netflix/Hulu [Online Streaming Service]
+
 Southwest/Delta Airlines [Airline company]
+
 
 Once collected, sentiment will be analyzed for each brand. This provides an opportunity to describe the overall sentiment about major companies in each business category as well as compare the rivaling company’s current appeal based on customer opinions. 
 
 Data collected for the purpose of this project would be: 
+
 Tweets Text Data: Tweets posted over a period of time that is about a specific brand, including tweet time, number of views, retweets, likes, favorites, etc. Tweets will be pulled separately for each of the 6 brands. 
+
 User Data: Data about the user who has posted the tweets in the tweets dataset, including follower counts, following count, listed count, verified status etc.
+
 Brand Data: Data about the brand, the brand name, brand logo, bio, location, tagline, etc. This data is further categorized into the 3 types of industries that are being compared. 
 
 The information pulled from the API is used to derive the following:
-Sentiment Data: sentiment for each tweet and hence the overall brand.  This can contain dimensions such as sentiment comparison between the 3 different pairs, sentiment trends (positive, negative, neutral), and the general distribution of customer sentiment along with hierarchies like Tweet ID, Brand Name, Sentiment Score. 
+Sentiment Data: sentiment for each tweet and hence the overall brand.  This can contain dimensions such as sentiment comparison between the 3 different pairs, sentiment trends 
+(positive, negative, neutral), and the general distribution of customer sentiment along with hierarchies like Tweet ID, Brand Name, Sentiment Score. 
+
 Brand Comparison Data: to finally display the results of the analysis, this table stores the brand’s current popularity along with the sentiment difference when compared to its rivaling brand in the same industry. 
+
+The final relational model used can be seen here:
+
+![Alt text](ReadME/1.jpg)
+
+A few queries performed on the data once passing through the necessary ETL pipeline:
+
+![Alt text](ReadME/2.jpg)
+
+![Alt text](ReadME/3.jpg)
 
 
 
