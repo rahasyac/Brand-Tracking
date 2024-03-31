@@ -28,13 +28,13 @@ Brand Comparison Data: to finally display the results of the analysis, this tabl
 
 The final relational model used can be seen here:
 
-![Alt text](ReadME/1.jpg)
+![Alt text](readme/1.jpg)
 
 A few queries performed on the data once passing through the necessary ETL pipeline:
 
-![Alt text](ReadME/2.jpg)
+![Alt text](readme/2.jpg)
 
-![Alt text](ReadME/3.jpg)
+![Alt text](readme/3.jpg)
 
 
 
